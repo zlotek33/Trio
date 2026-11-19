@@ -284,6 +284,7 @@ jobs:
 
       # Upload to TestFlight
       - name: Fastlane upload to TestFlight
+        if: ${{ false }}
         run: bundle exec fastlane release
         env:
           TEAMID: ${{ secrets.TEAMID }}
